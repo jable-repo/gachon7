@@ -4,92 +4,106 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.contentContainer}>
+        <div className={styles.leftContent}>
+          <div className={styles.toolbar}>
+            <div>
+              <Image
+                src="/chiwon_name.png"
+                alt="chiwon_name picture"
+                className={styles.vercelLogo}
+                width={100}
+                height={20}
+                priority
+              />
+            </div>
+            <nav>
+              <a href="#">Home</a> | 
+              <a href="#bottom">Contact</a> |  
+              <a href="/chiwon_portfolio">Portfolio Page</a>
+            </nav>
+          </div>
+              <div className={styles.customTextContainer}>
+                <h1>Chiwon's</h1>
+                <h1>Portfolio</h1>
+              </div>
+          </div>
+
+        <div className={styles.rightContent}>
+          <h1>송 치 원 / ChiWon Song</h1>
+          <h2>QA Test Engineer</h2>
+          <h3 className={styles.learnMore}>
+              <a href="/chiwon_portfolio">
+                Learn More <span>-&gt;</span>
+              </a>
+          </h3>
         </div>
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <div className={styles.customTextContainer}>
+          <h2> ────────────  Contact With Me  ──────────── </h2>
+        </div>
       </div>
-
+      
       <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="tel:+82 01048098358"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
+            Phone <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Let's connect on Phone!
+          </p>
+        </a>
+
+        <a
+          href="mailto:cwsong@morai.ai"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            E-Mail <span>-&gt;</span>
+          </h2>
+          <p>
+            Let's connect on Email!
+          </p>
+        </a>
+
+        <a
+          href="https://open.kakao.com/o/sHwGHcQd"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            KakaoTalk <span>-&gt;</span>
+          </h2>
+          <p>
+            Let's connect on KakaoTalk!
+          </p>
+        </a>
+
+        <a
+          href="https://www.instagram.com/nowihc.py/"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Instagram <span>-&gt;</span>
+          </h2>
+          <p>
+            Let's connect on Instagram!
           </p>
         </a>
       </div>
+      <div id="bottom"></div>
     </main>
   );
 }
